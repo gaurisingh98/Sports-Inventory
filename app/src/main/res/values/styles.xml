@@ -1,0 +1,30 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Splash Screen-->
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash_screen</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Toolbar / Appbar -->
+    <style name="Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="colorControlNormal">@color/colorBlue</item>
+        <item name="fontFamily">@font/opensans_semibold</item>
+        <item name="actionMenuTextColor">@color/colorBlue</item>
+    </style>
+
+    <style name="TextField">
+        <item name="android:maxLines">1</item>
+        <item name="singleLine">true</item>
+        <item name="fontFamily">@font/opensans_regular</item>
+        <item name="android:textSize">@dimen/text_16sp</item>
+    </style>
+</resources>

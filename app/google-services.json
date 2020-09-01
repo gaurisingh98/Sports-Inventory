@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "575994469268",
+    "firebase_url": "https://sports-inventory-7bf78.firebaseio.com",
+    "project_id": "sports-inventory-7bf78",
+    "storage_bucket": "sports-inventory-7bf78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575994469268:android:3cfafb8c7a4bb3fad9cd81",
+        "android_client_info": {
+          "package_name": "com.cellfishpool.sportsinventory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575994469268-0qof91u3q7qaff99dmprujjmrpo7qujb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCay_srguTjMWFa4vUkVWNMFRrDlJLb4rU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575994469268-0qof91u3q7qaff99dmprujjmrpo7qujb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

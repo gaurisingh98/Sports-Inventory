@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#09a8c1</color>
+    <color name="colorPrimaryDark">#0593a7</color>
+    <color name="colorAccent">#0da166</color>
+
+    <color name="primary_50">#e0f6fb</color>
+
+    <color name="colorError">#9e1c0e</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite60">#99FFFFFF</color>
+
+    <color name="colorTextPrimary">#263238</color>
+    <color name="colorTextSecondary">#37474f</color>
+    <color name="colorTextSubTitle">#455a64</color>
+    <color name="colorTextDark500">#607d8b</color>
+
+    <color name="colorBlue">#2654b0</color>
+    <color name="colorBlueLight">#6f87c7</color>
+
+    <color name="colorGrey">#263238</color>
+    <color name="colorGreyLight">#546e7a</color>
+    <color name="colorOffGreyLight">#eceff1</color>
+    <color name="colorGreyLightest">#cfd8dc</color>
+
+    <color name="tabSelected">#006b78</color>
+    <color name="tabNormal">#b2eaf3</color>
+    <color name="complementary_400">#ca4637</color>
+    <color name="colorBlueGrey">#78909c</color>
+
+
+    <color name="chat_color_mask_bubble">#fff</color>
+    <color name="colorHostText">#fff</color>
+    <color name="colorGuestText">#455a64</color>
+    <color name="colorHostSolid">#455a64</color>
+    <color name="colorGuestSolid">#A5ACAF</color>
+    <color name="colorGuestStroke">#fff</color>
+    <color name="colorHostStroke">#2654b0</color>
+
+    <color name="transparent">#00000000</color>
+</resources>
