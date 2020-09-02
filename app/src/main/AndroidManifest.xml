@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.student.HistoryActivity"></activity>
+        <activity android:name=".ui.student.InventoryCnfActivity" />
         <activity android:name=".ui.SignUpActivity" />
         <activity android:name=".ui.coach.CoachActivity" />
         <activity android:name=".ui.student.StudentActivity" />

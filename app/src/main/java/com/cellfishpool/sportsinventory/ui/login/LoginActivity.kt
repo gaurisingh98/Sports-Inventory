@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.cellfishpool.sportsinventory.databinding.ActivityLoginBinding
 import com.cellfishpool.sportsinventory.ui.SignUpActivity
+import com.cellfishpool.sportsinventory.ui.coach.CoachActivity
 import com.cellfishpool.sportsinventory.ui.student.StudentActivity
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
@@ -37,8 +38,9 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this, OnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_LONG).show()
-                    val intent = Intent(this, StudentActivity::class.java)
-                    startActivity(intent)
+                    if (email != "coachadmin@iiml.ac.in")
+                        startActivity(Intent(this, StudentActivity::class.java))
+                    else startActivity(Intent(this, CoachActivity::class.java))
                     finish()
                 } else {
                     Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show()

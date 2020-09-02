@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.cellfishpool.sportsinventory.R
 import com.cellfishpool.sportsinventory.databinding.ActivitySignUpBinding
 import com.cellfishpool.sportsinventory.ui.coach.CoachActivity
 import com.cellfishpool.sportsinventory.ui.student.StudentActivity
@@ -37,15 +36,18 @@ class SignUpActivity : AppCompatActivity() {
             .addOnCompleteListener(this, OnCompleteListener { task ->
                 if (task.isSuccessful) {
                     binding.pbLoader.visibility = View.GONE
-                    when (binding.radioGroup.checkedRadioButtonId) {
-                        R.id.rb_coach -> {
-                            Toast.makeText(this, "Successfully Registered as Coach", Toast.LENGTH_LONG).show()
-                            startActivity(Intent(this, CoachActivity::class.java))
-                        }
-                        R.id.rb_student -> {
-                            Toast.makeText(this, "Successfully Registered as Student", Toast.LENGTH_LONG).show()
-                            startActivity(Intent(this, StudentActivity::class.java))
-                        }
+                    if (email == "coachadmin@iiml.ac.in") {
+                        Toast.makeText(this, "Successfully Registered as Coach", Toast.LENGTH_LONG)
+                            .show()
+                        startActivity(Intent(this, CoachActivity::class.java))
+                    } else {
+                        Toast.makeText(
+                            this,
+                            "Successfully Registered as Student",
+                            Toast.LENGTH_LONG
+                        )
+                            .show()
+                        startActivity(Intent(this, StudentActivity::class.java))
                     }
                     finish()
                 } else {
