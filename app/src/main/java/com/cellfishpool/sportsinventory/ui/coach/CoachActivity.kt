@@ -51,10 +51,11 @@ class CoachActivity : AppCompatActivity() {
                         students.add(
                             Student(
                                 sn.child("studentName").value.toString(),
+                                sn.child("phoneno").value.toString(),
                                 sn.child("sportsName").value.toString(),
                                 sn.child("status").value.toString(),
                                 sn.child("time").value.toString(),
-                                sn.child("venue").value.toString()
+                                sn.child("venue").value.toString(),
                             )
                         )
                     }
@@ -69,6 +70,7 @@ class CoachActivity : AppCompatActivity() {
                         )
                 }
             }
+
             override fun onCancelled(p0: DatabaseError) {
                 TODO("Not yet implemented")
             }

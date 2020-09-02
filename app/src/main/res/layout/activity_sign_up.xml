@@ -81,41 +81,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/password_label_tv" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <RadioGroup
-                android:id="@+id/radioGroup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_10dp"
-                android:checkedButton="@id/rb_student"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="@+id/til_password"
-                app:layout_constraintTop_toBottomOf="@+id/til_password">
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/rb_student"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Student" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/rb_coach"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Coach" />
-            </RadioGroup>
-
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_signup"
-                android:layout_marginTop="@dimen/dimen_10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="Sign Up"
                 android:textAllCaps="true"
                 android:textColor="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+                app:layout_constraintTop_toBottomOf="@+id/til_password" />
 
             <ProgressBar
                 android:id="@+id/pb_loader"

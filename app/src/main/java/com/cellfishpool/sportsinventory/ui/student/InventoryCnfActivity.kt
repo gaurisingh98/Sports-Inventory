@@ -1,6 +1,8 @@
 package com.cellfishpool.sportsinventory.ui.student
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.cellfishpool.sportsinventory.databinding.ActivityInventoryCnfBinding
@@ -11,7 +13,6 @@ import com.google.firebase.database.FirebaseDatabase
 class InventoryCnfActivity : AppCompatActivity() {
     var database = FirebaseDatabase.getInstance()
 
-    //    var sharedpreferences: SharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
     private lateinit var sportsName: String
     private lateinit var binding: ActivityInventoryCnfBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,10 +31,10 @@ class InventoryCnfActivity : AppCompatActivity() {
                     .setValue(
                         Student(
                             etEmail.text.toString(),
+                            etPhone.text.toString(),
                             sportsName, "pending", null, null
                         )
                     )
-                //sharedpreferences.edit().putString("phoneno", etPhone.text.toString())
             }
             btnDismiss.setOnClickListener {
                 startActivity(Intent(this@InventoryCnfActivity, StudentActivity::class.java))

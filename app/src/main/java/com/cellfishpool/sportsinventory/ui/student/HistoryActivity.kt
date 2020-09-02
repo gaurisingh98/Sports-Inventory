@@ -32,7 +32,7 @@ class HistoryActivity : AppCompatActivity() {
     }
 
     private fun fetchData() {
-        val database = FirebaseDatabase.getInstance().getReference("9587873443")
+        val database = FirebaseDatabase.getInstance().getReference("9889432651")
         database.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 val iter = p0.children.iterator()
@@ -41,6 +41,7 @@ class HistoryActivity : AppCompatActivity() {
                     students.add(
                         Student(
                             snap.child("studentName").value.toString(),
+                            snap.child("phoneno").value.toString(),
                             snap.child("sportsName").value.toString(),
                             snap.child("status").value.toString(),
                             snap.child("time").value.toString(),
